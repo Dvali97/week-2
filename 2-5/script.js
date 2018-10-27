@@ -1,19 +1,21 @@
-var cont = document.getElementById("container");
-var all_img = cont.getElementsByTagName('img');
+var images = document.getElementsByClassName("images").src;
+var td = document.getElementsByClassName("td");
 var x = Math.round(Math.random() * 4);
 
-
-var table = document.getElementById("table");
-var tr = table.getElementsByTagName('tr');
-var td = tr.getElementsByTagName('td');
-
 function fun1() {
-    for (var i = 0; i <= all_img.length; i++) {
-        // all_img[x].style.display = "block";
+    for (var i = 0; i <= images.length; i++) {
         for (var j = 0; j <= td.length; j++) {
-            td[j].innerHTML = '<img src="img/1.jpg" alt="">';
+            td[0].src = "img/1.jpg";
+            td[1].src = "img/1.jpg";
+            td[2].src = "img/1.jpg";
+            td[3].src = "img/1.jpg";
+            td[4].src = "img/1.jpg";
+            td[5].src = "img/1.jpg";
+            td[6].src = "img/1.jpg";
         }
     }
+
+
 }
 
 fun1();
